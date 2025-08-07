@@ -1,8 +1,10 @@
 import { Geist, Geist_Mono } from 'next/font/google';
+import AppProviders from './providers';
 
 import '../../public/styles/normalize.css';
+import '@xyflow/react/dist/style.css';
+
 import type { Metadata } from 'next';
-import AppProviders from './providers';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
