@@ -1,1 +1,1 @@
-export { default } from './RoadmapFlow';
+export { default } from './PhaseNode';

@@ -1,12 +1,14 @@
 'use client';
+
 import { useState } from 'react';
 import { Background, ReactFlow } from '@xyflow/react';
 import StyledPageContainer from '@/components/Common';
-import { RoadMapEdges, RoadMapNodes } from '@/constants';
+import { BeforePregnancyEdges, BeforePregnancyNodes } from '@/constants';
 
-const EntryPage = () => {
-  const [nodes, setNodes] = useState(RoadMapNodes);
-  const [edges, setEdges] = useState(RoadMapEdges);
+const BeforePregnancy = () => {
+  const [nodes, setNodes] = useState(BeforePregnancyNodes);
+  const [edges, setEdges] = useState(BeforePregnancyEdges);
+
   return (
     <StyledPageContainer>
       <ReactFlow nodes={nodes} edges={edges} fitView>
@@ -16,4 +18,4 @@ const EntryPage = () => {
   );
 };
 
-export default EntryPage;
+export default BeforePregnancy;

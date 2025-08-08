@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from 'next/font/google';
+import AppThemeContainer from '@/components/AppThemeContainer';
 import AppProviders from './providers';
 
 import '../../public/styles/normalize.css';
@@ -29,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <AppProviders>{children}</AppProviders>
+        <AppProviders>
+          <AppThemeContainer>{children}</AppThemeContainer>
+        </AppProviders>
       </body>
     </html>
   );
